@@ -3,10 +3,7 @@
 /*FONTS*/
 @font-face {
     font-family: 'Inter';
-    src: 
-    url('assets/fonts/static/Inter-Regular.ttf'),
-    url('assets/fonts/static/Inter-Bold.ttf'), 
-    url('assetes/fonts/static/Inter-ExtraBold.ttf');
+    src: url('assetes/fonts/static/Inter-ExtraBold.ttf');
 }
 
 :root{
@@ -20,7 +17,7 @@
     --neutral-vd-gray: hsl(240, 100%, 5%);
     /*FONT TYPHOGRAPY*/
     font-size:62.5%;
-    --ff: 'Inter';
+    --ff: 'Inter', sans-serif;
     --fw-r:400; 
     --fw-b:700; 
     --fw-xb:900; 
@@ -42,17 +39,17 @@ p{
     font-size:1.5rem; 
 }
 h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: var(--fw-xb);
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: var(--fw-b);
     color: var(--primary-col-orange);
 }
 h3{
     font-size: 2rem;
-    font-weight: var(--fw-xb);
+    font-weight: var(--fw-b);
 }
 h4{
     font-size: 5rem;
@@ -163,6 +160,12 @@ header{
         justify-content: space-between;
         gap:3rem;
     }
+    .section3_text{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: flex-start;
+    }
     
 }
 
@@ -184,6 +187,9 @@ header{
     .section-3{
         grid-area: bottom;
         display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
         margin-top: 5rem;
         margin-bottom:0rem;
     }
@@ -197,12 +203,14 @@ header{
     }
     .title{
         max-width: 29rem;
+        display:flex;
+        align-self: start;
+    
     }
     .photo{
-        max-height: 19rem;
+        max-height: 22rem;
     }
     
-   
 }
 
 /*
@@ -225,8 +233,9 @@ img{
 
 section{
     display: grid;
-    margin: 3rem;
+    margin: 4rem;
     gap:0rem;
+    max-height: 55rem;
     
 }
 
@@ -256,7 +265,7 @@ SECTION 2
     margin-bottom: 2rem;
 }
 .section-2 article{
-    margin:2rem 0;
+    margin:1rem 0;
 }
 hr{
     width:100%;
@@ -279,12 +288,10 @@ hr{
 .section3_text{
     display:flex;
     flex-direction: column;
-    justify-content:space-between;
-    align-items: flex-start;
+    align-items:start;
+    justify-content:flex-start;
 }
 .photo{
-    width:100%;
-    height:auto;
     max-width: 15rem;
 }
 
